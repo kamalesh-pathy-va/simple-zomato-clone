@@ -169,6 +169,36 @@ body {
 	box-shadow: 1px 5px 10px 2px rgba(77,26,127,0.3);
 }
 
+.contact__form__container {
+	margin: 30px 0px;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form__elements {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	gap: 10px;
+}
+
+.contact__form__element_input__tag {
+	width: 65%;
+	padding: 10px;
+	font-size: 18px;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid #ff512f;
+	background-color: #ff512f22;
+	outline: none;
+}
+
+.get__updates__button {
+	padding: 5px;
+}
+
 @media (min-width: 768px) {
 	.navbar {
 		justify-content: space-between;
@@ -233,6 +263,20 @@ body {
 	.restaurants__image__container {
 		width: 50%;
 	}
+
+	.contact__form__container {
+		width: 60%;
+		margin: 30px auto;
+		font-size: 20px;
+	}
+
+	.contact__form__elements {
+		justify-content: left;
+	}
+
+	.get__updates__button {
+		padding: 10px;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -296,4 +340,12 @@ body {
 		font-size: 32px;
 	}
 
+	.contact__form__container {
+		width: 50%;
+	}
+
+	.contact__form__element_input__tag {
+		padding: 15px;
+
+	}
 }
