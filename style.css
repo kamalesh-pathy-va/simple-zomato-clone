@@ -6,6 +6,7 @@
 body {
 	font-family: 'Merriweather', serif;
 	background-color: #ebfeff;
+	color: #1d3557;
 }
 
 .navbar {
@@ -126,6 +127,48 @@ body {
 	font-weight: 600;
 }
 
+.restaurants__description {
+	margin-top: 40px;
+}
+
+.restaurants__image__container {
+	margin: 25px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.restaurants__image__container__1, .restaurants__image__container__2 {
+	display: flex;
+	column-gap: 10px;
+}
+
+.restaurants__image__container__1 {
+	align-items: baseline;
+}
+
+.restaurants__image__1__container {
+	width: 40%;
+}
+
+.restaurants__image__2__container {
+	width: 60%;
+}
+
+.restaurants__image__3__container {
+	width: 60%;
+}
+
+.restaurants__image__4__container {
+	width: 40%;
+}
+
+.restaurants__image__1, .restaurants__image__2, .restaurants__image__3, .restaurants__image__4 {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 1px 5px 10px 2px rgba(77,26,127,0.3);
+}
+
 @media (min-width: 768px) {
 	.navbar {
 		justify-content: space-between;
@@ -174,6 +217,21 @@ body {
 		background: none;
 		font-weight: 500;
 		transition: 300ms ease;
+	}
+
+	.restaurants__container {
+		display: flex;
+		align-items: center;
+		margin: 20px 0px;
+	}
+
+	.restaurants__description {
+		font-size: 18px;
+		width: 50%;
+	}
+
+	.restaurants__image__container {
+		width: 50%;
 	}
 }
 
@@ -230,5 +288,12 @@ body {
 		color: #d83a56;
 		width: 50%;
 		box-shadow: 0px 4px 30px -10px black;
+		padding: 12px;
 	}
+
+	.restaurants__description {
+		width: 50%;
+		font-size: 32px;
+	}
+
 }
