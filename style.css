@@ -19,10 +19,19 @@ body {
 
 .navbar__brand {
 	width: 100px;
+	transform: translateX(-100%);
+	opacity: 0;
+	animation: slide 500ms 500ms 1 normal ease forwards;
 }
 
 .navbar__logo {
 	width: 100%;
+}
+
+.navbar__nav__items {
+	transform: translateX(100%);
+	opacity: 0;
+	animation: slide 500ms 500ms 1 normal ease forwards;
 }
 
 .button__primary {
@@ -445,5 +454,12 @@ body {
 	.message__text {
 		font-size: 32px;
 		padding: 30px;
+	}
+}
+
+@keyframes slide {
+	to {
+		transform: translateX(0%);
+		opacity: 1;
 	}
 }
