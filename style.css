@@ -252,6 +252,7 @@ body {
 
 .footer__logo {
 	width: 100%;
+	filter: brightness(0) invert(1);
 }
 
 .footer__list {
