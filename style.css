@@ -95,8 +95,20 @@ body {
 	color: #1d3557;
 }
 
-.explore__menu__lists {
+.hero__text__highlight {
+	position: relative;
+}
 
+.hero__text__highlight::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #94D0CCaa;
+	z-index: -1;
+	animation: highlight 700ms 1.5s 1 normal ease-out forwards;
 }
 
 .explore__menu__text {
@@ -461,5 +473,11 @@ body {
 	to {
 		transform: translateX(0%);
 		opacity: 1;
+	}
+}
+
+@keyframes highlight {
+	to {
+		width: 100%;
 	}
 }
