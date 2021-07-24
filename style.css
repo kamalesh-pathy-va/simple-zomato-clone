@@ -130,11 +130,13 @@ body {
 
 .food__card__image__container {
 	width: 100%;
+	overflow: hidden;
 }
 
 .food__image {
 	width: 100%;
-	/*border-radius: 8px 8px 0 0;*/
+	transform: scale(1.0);
+	transition: transform 100ms linear;
 }
 
 .food__card__description {
@@ -427,6 +429,10 @@ body {
 
 	.explore__menu__container {
 		text-align: center;
+	}
+
+	.food__card:hover .food__image {
+		transform: scale(1.1);
 	}
 
 	.explore__menu__text {
