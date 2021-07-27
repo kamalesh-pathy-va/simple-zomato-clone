@@ -259,7 +259,7 @@ body {
 }
 
 .message__container {
-	background-image: url(assets/restaurant.jpg);
+	background-image: url(https://unsplash.it/300/200);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -415,6 +415,7 @@ body {
 	}
 
 	.message__container {
+		background-image: url(https://unsplash.it/600/200);
 		background-position: center;
 	}
 
@@ -515,6 +516,7 @@ body {
 	}
 
 	.message__container {
+		background-image: url(https://unsplash.it/1000/400);
 		height: 300px;
 	}
 
