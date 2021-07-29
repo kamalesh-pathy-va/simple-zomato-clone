@@ -3,17 +3,45 @@
 	padding: 0;
 }
 
+:root {
+	--primary-light-clr: #ebfeff;
+	--secondary-light-clr: #1d3557;
+	--navbar: #fff;
+	--highlighter: #94D0CCaa;
+	--card-background: #f9f9f9;
+	--form-background: #ff512f22;
+	--view-more-btn-foreground: #d83a56;
+
+	--primary-foreground: var(--secondary-light-clr);
+	--primary-background: var(--primary-light-clr);
+}
+
+@media(prefers-color-scheme: dark) {
+	:root {
+		--primary-dark-clr: #ebfeff;
+		--secondary-dark-clr: #1d1c3d;
+		--navbar: #36170c;
+		--highlighter: #94D0CCaa;
+		--card-background: #4f0022;
+		--form-background: #ff512f22;
+		--view-more-btn-foreground: #d83a56;
+
+		--primary-foreground: var(--primary-dark-clr);
+		--primary-background: var(--secondary-dark-clr);
+	}
+}
+
 body {
 	font-family: 'Merriweather', serif;
-	background-color: #ebfeff;
-	color: #1d3557;
+	background-color: var(--primary-background);
+	color: var(--primary-foreground);
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #fff;
+	background-color: var(--navbar);
 	box-shadow: 0 5px 20px -10px rgba(10 10 10 / 25);
 	overflow-x: hidden;
 }
@@ -98,7 +126,7 @@ body {
 	font-size: 32px;
 	font-weight: 800;
 	margin: 20px 0px;
-	color: #1d3557;
+	color: var(--primary-foreground);
 	transform: translateY(30px);
 	opacity: 0;
 	animation: fade-up 400ms 100ms 1 normal ease-out forwards;
@@ -115,7 +143,7 @@ body {
 	left: 0;
 	width: 0%;
 	height: 100%;
-	background-color: #94D0CCaa;
+	background-color: var(--highlighter);
 	z-index: -1;
 	animation: highlight 700ms 1.5s 1 normal ease-out forwards;
 }
@@ -132,7 +160,7 @@ body {
 	text-align: center;
 	font-size: 32px;
 	font-weight: 800;
-	color: #1d3557;
+	color: var(--primary-foreground);
 	transform: translateY(30px);
 	opacity: 0;
 	animation: fade-up 400ms 200ms 1 normal ease-out forwards;
@@ -145,7 +173,7 @@ body {
 }
 
 .food__card {
-	background-color: #f9f9f9;
+	background-color: var(--card-background);
 	box-shadow: 5px 5px 20px -10px rgba(0 0 0 / 50);
 	margin-bottom: 20px;
 	border-radius: 8px;
@@ -250,7 +278,7 @@ body {
 	height: 15px;
 	border-radius: 5px;
 	border: 1px solid #ff512f;
-	background-color: #ff512f22;
+	background-color: var(--form-background);
 	outline: none;
 }
 
@@ -495,7 +523,7 @@ body {
 
 	.explore__menu__view__more__btn:hover {
 		background: white;
-		color: #d83a56;
+		color: var(--view-more-btn-foreground);
 		width: 50%;
 		box-shadow: 0px 4px 30px -10px black;
 		padding: 12px;
